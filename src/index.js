@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
   const form = document.getElementById("create-task-form");
@@ -18,7 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
     li.appendChild(removeButton)
     
     removeButton.addEventListener("click", function deleteLi() {
-      li.remove()
+      // li.remove()
+      if(li.innerHTML === li.innerHTML){
+        li.remove()
+      }
     })
   })
 });
+
